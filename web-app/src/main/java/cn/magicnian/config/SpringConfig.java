@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
+import org.springframework.web.client.RestTemplate;
 
 /**
  * 配置文件注入类
@@ -23,5 +24,10 @@ public class SpringConfig {
     @Bean
     public static PropertySourcesPlaceholderConfigurer createPropertySourcesPlaceholderConfigurer(){
         return new PropertySourcesPlaceholderConfigurer();
+    }
+
+    @Bean
+    public RestTemplate restTemplate(){
+        return new RestTemplate();
     }
 }
