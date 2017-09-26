@@ -10,7 +10,7 @@ public class Person {
 
     public String name;
 
-    private Integer age;
+    public Integer age;
 
     private Double height;
 
