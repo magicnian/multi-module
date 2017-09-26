@@ -21,7 +21,7 @@ public class Learn3 {
          * 如果没有指定的构造方法能满足匹配的方法参数则会抛出：NoSuchMethodException
          */
 
-        Constructor constructor = clazz.getConstructor(new Class[]{String.class, Integer.class, Double.class});
+        Constructor constructor = clazz.getConstructor(String.class, Integer.class, Double.class);
 
         /**
          * 可以通过如下方式获取指定构造方法的方法参数信息
