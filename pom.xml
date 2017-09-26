@@ -12,6 +12,7 @@
         <module>web-app</module>
         <module>web-service</module>
         <module>web-dao</module>
+        <module>common-test</module>
     </modules>
 
     <parent>
@@ -101,6 +102,12 @@
             <version>${httpclient.version}</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/ch.ethz.ganymed/ganymed-ssh2 -->
+        <dependency>
+            <groupId>ch.ethz.ganymed</groupId>
+            <artifactId>ganymed-ssh2</artifactId>
+            <version>build210</version>
+        </dependency>
 
     </dependencies>
 
@@ -117,6 +124,25 @@
                 </configuration>
             </plugin>
         </plugins>
+
+        <resources>
+
+            <resource>
+
+                <directory>src/lib</directory>
+
+                <targetPath>/lib</targetPath>
+
+                <includes>
+
+                    <include>**/*.jar</include>
+
+                </includes>
+
+            </resource>
+
+        </resources>
+
     </build>
 
 </project>

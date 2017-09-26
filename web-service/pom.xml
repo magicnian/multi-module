@@ -26,6 +26,31 @@
             <artifactId>spring-web</artifactId>
             <version>4.3.7.RELEASE</version>
         </dependency>
+
+        <dependency>
+            <groupId>baiduocr</groupId>
+            <artifactId>Ice</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/src/lib/ocr_sdk-1.3.9.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>baidujson</groupId>
+            <artifactId>Ice</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/src/lib/json-20160810.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>baiduapicore</groupId>
+            <artifactId>Ice</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/src/lib/aip-core-1.3.8.jar</systemPath>
+        </dependency>
+
+
+
     </dependencies>
 
 
