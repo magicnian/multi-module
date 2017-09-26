@@ -8,18 +8,28 @@ import javax.annotation.Resource;
 @Resource
 public class Person {
 
-    public String Name;
+    public String name;
 
     private Integer age;
 
     private Double height;
 
+    public Person(){
+
+    }
+
+    public Person(String name,Integer age,Double height){
+        this.name = name;
+        this.age = age;
+        this.height = height;
+    }
+
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        name = name;
     }
 
     public Integer getAge() {
@@ -40,6 +50,6 @@ public class Person {
 
 
     private String param(){
-        return this.Name+this.age+this.height;
+        return this.name+this.age+this.height;
     }
 }
