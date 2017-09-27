@@ -14,10 +14,6 @@ public class Person {
 
     private Double height;
 
-    public Person(){
-
-    }
-
     public Person(String name,Integer age,Double height){
         this.name = name;
         this.age = age;

@@ -54,7 +54,8 @@ public class Learn5 {
          *
          */
         Class pClass = Class.forName("cn.magicnian.learn.reflection.Person");
-        Object o = pClass.newInstance();
+        pClass.getDeclaredConstructor(String.class,Integer.class,Double.class).newInstance();//这种方式可以调用任意的public修饰的构造方法，但是必须保证参数列表相同
+        Object o = pClass.newInstance();//newinstatce方法只能调用无参构造
         method.invoke(o,null);
 
     }

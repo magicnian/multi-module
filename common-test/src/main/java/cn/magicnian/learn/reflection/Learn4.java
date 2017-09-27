@@ -36,7 +36,7 @@ public class Learn4 {
         /**
          * 一旦你获得了一个Field的引用，你就可以通过调用Field.get()或Field.set()方法，获取或者设置变量的值
          */
-        Person p = new Person();
+        Person p = new Person("jerry",12,178.1);
         p.setAge(12);
 
         Object value = field.get(p);
